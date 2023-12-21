@@ -23,3 +23,6 @@
 <meta property="og:image" content="{{ site.url }}{{ site.avatar }}"/>
 <meta property="twitter:image" content="{{ site.url }}{{ site.avatar }}"/>
 {% endif %}
+{% if page.mermaid %}
+  {% include mermaid.html %}
+{% endif %}
