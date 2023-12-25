@@ -36,11 +36,13 @@ However, my results did not come out quite the way I expected. I wasn't sure if 
 
 ---
 Finally, now that we have soda ash, salt, and water all figured out, we can begin the dyeing process.  On the first time, I noticed that the dye seemed a little patchy. Here's how it looked: 
-![IMG_2415](https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/d0bf4ebc-670a-43bd-9b7f-25a0e4605124)
+<img src="https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/d0bf4ebc-670a-43bd-9b7f-25a0e4605124" alt="fabric" width="300"/>
+
 
 
 I am also wearing the muslin, with an unfinished hem, underneath the draped linen fabric so I could see if I would like this shirt pattern for this fabric, which, I do! 
-![IMG_2422](https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/113b484c-7b18-4487-87f5-ccf56ecff80f)
+<img src="https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/113b484c-7b18-4487-87f5-ccf56ecff80f" alt="fabric" width="300"/>
+
 
 As a side note: I do know that I need to lengthen the gathered bottom portion of the shirt by about two inches or so. I'm a relatively tall person so usually, I need to lengthen the bodice portion of dresses and tops. This is why it's good to make a muslin!
 
