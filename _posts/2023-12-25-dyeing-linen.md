@@ -9,22 +9,22 @@ I am lucky enough to live close enough to a local fabric and art supplies store.
 
 The instructions, however, are for 1 pounds worth of fabric (roughly three t-shirts), so I am going to calculate the rough weight of this fabric by using the weight of the fabric which is between 3.7 oz/yd$^2$ (the average weight of a handkerchief linen) to 4.86 oz/yd$^2$ (which is the weight of the 100% linen that I *think* I purchased at the fabric store, I don't know exactly). By dividing by 16, 
 
-$\frac{3.7oz}{yd^2}*\frac{1lb}{16oz}$= $\frac{.2313lb}{yd^2}$ (rounding to the fourth decimal place)
+<div> $\frac{3.7oz}{yd^2}*\frac{1lb}{16oz}$= $\frac{.2313lb}{yd^2}$ (rounding to the fourth decimal place) </div>
 
-$\frac{4.86oz}{yd^2}*\frac{1lb}{16oz}$ = $\frac{.3038lb}{yd^2}$
+<div> $\frac{4.86oz}{yd^2}*\frac{1lb}{16oz}$ = $\frac{.3038lb}{yd^2}$ </div>
 
 Given that I have a yard and a quarter's worth, that means the weight is anywhere from .289lb - .380lb. I'm going to use 1 gallon of warm water then, instead of 3, since I have roughly 1/3lb of fabric. This makes sense considering that I think I can make one top from this fabric, not three t-shirts worth. The fabric needs to be able to "move freely in the dye bath". 
 
 For a medium shade, I need 1/3 tbsp of dye, 1/2 cups of salt, 1/12 cup of soda ash (so 4 tsp worth). 
 
-It's not worth buying a whole thing of soda ash, and since it's just sodium carbonate (Na$_{2}$CO$_3$), I'm going to take some baking soda, sodium bicarbonate(NaCO$_3$), and heat it so the water and carbon dioxide come off. This means I will bake it in the oven till it's about 2/3rds of its original weight, thus giving us an easy ratio to measure out for how much baking soda I will need (6 tsps).  
+It's not worth buying a whole thing of soda ash, and since it's just sodium carbonate <div> (Na$_{2}$CO$_3$) </div>, I'm going to take some baking soda, sodium bicarbonate(NaCO$_3$), and heat it so the water and carbon dioxide come off. This means I will bake it in the oven till it's about 2/3rds of its original weight, thus giving us an easy ratio to measure out for how much baking soda I will need (6 tsps).  
 
 [[/images/Washing-Soda-From-Baking-Soda.png]]
 You can't "overcook" the soda, but all of the water does need to come out. So, my final recipe is going to look like this:
 
 **Sodium Carbonate Recipe**
 6 tsps of baking soda
-1. Preheat oven to $400 \degree{F}$
+1. Preheat oven to $400 <div> $\degree{F}$ </div>
 2. Baking sheet with foil, and spread baking soda in an even layer in the oven
 3. Bake for about 15-30 minutes
 4. Take out, and store in airtight container (make sure to wear plastic gloves in order to protect yourself from this alkaline powder!!)
