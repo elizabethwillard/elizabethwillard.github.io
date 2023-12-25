@@ -42,12 +42,14 @@ Finally, now that we have soda ash, salt, and water all figured out, we can begi
 
 
 I am also wearing the muslin, with an unfinished hem, underneath the draped linen fabric so I could see if I would like this shirt pattern for this fabric, which, I do! 
+
 <img src="https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/113b484c-7b18-4487-87f5-ccf56ecff80f" alt="fabric" width="300"/>
 
 
 As a side note: I do know that I need to lengthen the gathered bottom portion of the shirt by about two inches or so. I'm a relatively tall person so usually, I need to lengthen the bodice portion of dresses and tops. This is why it's good to make a muslin!
 
 In order to fix the unevenness, I re-dyed the fabric after giving it a good laundering (to make sure that the fabric couldn't adhere to the dye because of some stain or another). Then, assembled and finished the shirt using this re-dyed linen. 
+
 <img src="https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/540ff713-131f-41db-a4bc-722bb5705336" alt="shirtfront" width="300"/>
 <img src="https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/4dca8185-1430-420f-a646-e2c2abee406b" alt="shirtback" width="300"/>
 
