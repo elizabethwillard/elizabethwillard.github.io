@@ -27,7 +27,7 @@ You can't "overcook" the soda, but all of the water does need to come out. So, m
 
 **Sodium Carbonate Recipe**
 6 tsps of baking soda
-1. Preheat oven to 400 $\degree{F}$ 
+1. Preheat oven to $400^{\circ}F$
 2. Baking sheet with foil, and spread baking soda in an even layer in the oven
 3. Bake for about 15-30 minutes
 4. Take out, and store in airtight container (make sure to wear plastic gloves in order to protect yourself from this alkaline powder!!)
