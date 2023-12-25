@@ -19,7 +19,11 @@ For a medium shade, I need 1/3 tbsp of dye, 1/2 cups of salt, 1/12 cup of soda a
 
 It's not worth buying a whole thing of soda ash, and since it's just sodium carbonate (Na$_{2}$CO$_3$), I'm going to take some baking soda, sodium bicarbonate(NaCO$_3$), and heat it so the water and carbon dioxide come off. This means I will bake it in the oven till it's about 2/3rds of its original weight, thus giving us an easy ratio to measure out for how much baking soda I will need (6 tsps).  
 
-[[images/Washing-Soda-From-Baking-Soda.png]]
+<img src="https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/d31133dc-d17f-4795-bda6-6f474de7d1a2" alt="chemistryimage" width="300"/>
+
+![Washing-Soda-From-Baking-Soda](https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/d31133dc-d17f-4795-bda6-6f474de7d1a2)
+
+
 You can't "overcook" the soda, but all of the water does need to come out. So, my final recipe is going to look like this:
 
 **Sodium Carbonate Recipe**
