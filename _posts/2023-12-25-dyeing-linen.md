@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First Time Hand-Dyeing Linen
-categories: [Personal, Hobbies, Craft]
+categories: [personal]
 ---
 
 I am lucky enough to live close enough to a local fabric and art supplies store. I found this remnant of 100% linen in a neutral-enough color that I thought would be suitable for dyeing. After doing a little research, I have found that the most recommended brand is [Procion MX](https://www.jacquardproducts.com/procion-mx). 
