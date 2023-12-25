@@ -42,10 +42,8 @@ I am also wearing the muslin, with an unfinished hem, underneath the draped line
 As a side note: I do know that I need to lengthen the gathered bottom portion of the shirt by about two inches or so. I'm a relatively tall person so usually, I need to lengthen the bodice portion of dresses and tops. This is why it's good to make a muslin!
 
 In order to fix the unevenness, I re-dyed the fabric after giving it a good laundering (to make sure that the fabric couldn't adhere to the dye because of some stain or another). Then, assembled and finished the shirt using this re-dyed linen. 
+<img src="https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/540ff713-131f-41db-a4bc-722bb5705336" alt="shirtfront" width="300"/>
+<img src="https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/4dca8185-1430-420f-a646-e2c2abee406b" alt="shirtback" width="300"/>
 
-![IMG_2702](https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/540ff713-131f-41db-a4bc-722bb5705336)
-
-
-![IMG_2707](https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/4dca8185-1430-420f-a646-e2c2abee406b)
 
 Can't wait to wear it next summer! 
