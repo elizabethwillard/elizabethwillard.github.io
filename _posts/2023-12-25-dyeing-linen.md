@@ -19,12 +19,12 @@ For a medium shade, I need 1/3 tbsp of dye, 1/2 cups of salt, 1/12 cup of soda a
 
 It's not worth buying a whole thing of soda ash, and since it's just sodium carbonate (Na$_{2}$CO$_3$), I'm going to take some baking soda, sodium bicarbonate(NaCO$_3$), and heat it so the water and carbon dioxide come off. This means I will bake it in the oven till it's about 2/3rds of its original weight, thus giving us an easy ratio to measure out for how much baking soda I will need (6 tsps).  
 
-[[/images/Washing-Soda-From-Baking-Soda.png]]
+[[images/Washing-Soda-From-Baking-Soda.png]]
 You can't "overcook" the soda, but all of the water does need to come out. So, my final recipe is going to look like this:
 
 **Sodium Carbonate Recipe**
 6 tsps of baking soda
-1. Preheat oven to $400 $\degree{F}$ 
+1. Preheat oven to 400 $\degree{F}$ 
 2. Baking sheet with foil, and spread baking soda in an even layer in the oven
 3. Bake for about 15-30 minutes
 4. Take out, and store in airtight container (make sure to wear plastic gloves in order to protect yourself from this alkaline powder!!)
@@ -33,12 +33,19 @@ However, my results did not come out quite the way I expected. I wasn't sure if 
 
 ---
 Finally, now that we have soda ash, salt, and water all figured out, we can begin the dyeing process.  On the first time, I noticed that the dye seemed a little patchy. Here's how it looked: 
+![IMG_2415](https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/d0bf4ebc-670a-43bd-9b7f-25a0e4605124)
 
 
 I am also wearing the muslin, with an unfinished hem, underneath the draped linen fabric so I could see if I would like this shirt pattern for this fabric, which, I do! 
+![IMG_2422](https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/113b484c-7b18-4487-87f5-ccf56ecff80f)
 
 As a side note: I do know that I need to lengthen the gathered bottom portion of the shirt by about two inches or so. I'm a relatively tall person so usually, I need to lengthen the bodice portion of dresses and tops. This is why it's good to make a muslin!
 
-In order to fix the unevenness, I re-dyed the fabric after giving it a good laundering (to make sure that the fabric couldn't adhere to the dye because of some stain or another). 
+In order to fix the unevenness, I re-dyed the fabric after giving it a good laundering (to make sure that the fabric couldn't adhere to the dye because of some stain or another). Then, assembled and finished the shirt using this re-dyed linen. 
+
+![IMG_2702](https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/540ff713-131f-41db-a4bc-722bb5705336)
 
 
+![IMG_2707](https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/4dca8185-1430-420f-a646-e2c2abee406b)
+
+Can't wait to wear it next summer! 
