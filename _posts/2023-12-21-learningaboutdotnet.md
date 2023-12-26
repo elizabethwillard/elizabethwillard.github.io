@@ -121,7 +121,7 @@ public static HostApplicationBuilder CreateHostApplicationBuilder(HostApplicatio
     {
 
         var fileArgument = new Argument<string>("file", "CSV Input File");
-        
+       
         var inputs = new FileInput();
         
         return inputs;
