@@ -8,12 +8,11 @@ B.S in Computer Engineering and a dual minor in English and Mathematics, current
 
 ### Work Experience
 **Idexx Laboratories** | August 2021 - Present | *Embedded Software Engineer I*
-    • Developed and coordinated emergency feature releases for chemistry analyzer product line to support in-field errors found by customer support using Lua and C++
+- Developed and coordinated emergency feature releases for chemistry analyzer product line to support in-field errors found by customer support using Lua and C++
 
 **University of Orono, Maine** | Fall 2020 - Spring 2021 | *Teaching Assistant*
 - Participated in assessment process using a variety of methods and techniques to provide effective, timely, and appropriate feedback to students to support their learning
 - Supervised laboratory work and advised methods to transfer knowledge
-
 
 **Texas Instruments** | May 2020 - August 2020 | *Computer Integrated Manufacturing Intern*
 - Designed and developed data pipeline using knowledge of SQL and C# to automatically query and generate logs of manufacturing machinery errors 
@@ -27,7 +26,8 @@ B.S in Computer Engineering and a dual minor in English and Mathematics, current
 - Language proficiency in Korean and French at B1
 
 ### Awards / Etc
-- Invited to join Leadership Development Program for Gender Equity at UC Berkeley School of Information. 
+- Invited to join Leadership Development Program for Gender Equity at UC Berkeley School of Information.
+-  Awarded the Grace Hopper Scholarship in 2019 to attend the Grace Hopper Conference
 
 
 
