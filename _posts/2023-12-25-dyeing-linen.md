@@ -9,8 +9,8 @@ I am lucky enough to live close enough to a local fabric and art supplies store.
 
 The instructions, however, are for 1 pounds worth of fabric (roughly three t-shirts), so I am going to calculate the rough weight of this fabric by using the weight of the fabric which is between 3.7 oz/yd$^2$ (the average weight of a handkerchief linen) to 4.86 oz/yd$^2$ (which is the weight of the 100% linen that I *think* I purchased at the fabric store, I don't know exactly). By dividing by 16, 
 
-        $ \begin{align} \frac{3.7oz}{yd^2}*\frac{1lb}{16oz}= \frac{.2313lb}{yd^2} \end{align} $ (rounding to the fourth decimal place) 
-        $ \begin{align} \frac{4.86oz}{yd^2}*\frac{1lb}{16oz} = \frac{.3038lb}{yd^2} \end{align} $
+        \begin{align} \frac{3.7oz}{yd^2}*\frac{1lb}{16oz}= \frac{.2313lb}{yd^2} \end{align} (rounding to the fourth decimal place) 
+        \begin{align} \frac{4.86oz}{yd^2}*\frac{1lb}{16oz} = \frac{.3038lb}{yd^2} \end{align} 
 
 
 Given that I have a yard and a quarter's worth, that means the weight is anywhere from .289lb - .380lb. I'm going to use 1 gallon of warm water then, instead of 3, since I have roughly 1/3lb of fabric. This makes sense considering that I think I can make one top from this fabric, not three t-shirts worth. The fabric needs to be able to "move freely in the dye bath". 
