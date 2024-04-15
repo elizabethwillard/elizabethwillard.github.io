@@ -101,7 +101,9 @@ jobs:
         
 
 ```
+
 5. We can now create an EC2 instance. We will need to add our 
+
 
 ```
     - name: Create SSH key 
@@ -127,10 +129,11 @@ jobs:
       run: |
         cat deploy.sh | ssh -oStrictHostKeyChecking=no -i ssh_private_key ubuntu@34.231.106.254 'cat > ./deploy.sh'
         cat docker-compose.yml | ssh -oStrictHostKeyChecking=no -i ssh_private_key ubuntu@34.231.106.254 'bash -c "cat > docker-compose.yml && chmod -R 755 ./deploy.sh && ./deploy.sh"'
-  ```
+```
 
 The deploy.sh file
-```
+
+```shell
 #!/bin/bash
 # remove old image container
 docker system prune --all --force
@@ -140,6 +143,7 @@ aws ecr get-login-password --region us-east-1 | docker login --username AWS --pa
 docker-compose --env-file .env up -d
 ```
 
+The Docker Compose File
 ```
 services:
   app:
