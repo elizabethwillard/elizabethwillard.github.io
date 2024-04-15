@@ -47,6 +47,7 @@ The inline policy should resemble the code above.
 4. I initially began by adapting the workflow from [Deploying to Amazon ECS](https://docs.github.com/en/actions/deployment/deploying-to-your-cloud-provider/deploying-to-amazon-elastic-container-service)
 This portion of the workflow is fairly simple to follow. I was having some issues with the memory limitations of the Github Action runner, so I added a step to delete the /opt/hostedtoolcache in order to free up some more room.
 But, we configure our AWS credentials using the ARN value from the IAM role we created earlier. Then, we log into AWS ECR before we build, tag, and push the image. In this workflow, I have chosen to dynamically set the tag value
+
 ```
 name: Deploy to Amazon ECR and SSH into EC2 Instance for Deployment
 
@@ -61,7 +62,6 @@ env:
 permissions:
   contents: read
   id-token: write
-
 
 jobs:
   deploy:
@@ -99,8 +99,6 @@ jobs:
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         echo "IMAGE=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
         
-
-
 
 ```
 5. We can now create an EC2 instance. We will need to add our 
