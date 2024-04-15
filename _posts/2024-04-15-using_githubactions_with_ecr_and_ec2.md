@@ -52,7 +52,7 @@ This portion of the workflow is fairly simple to follow. I was having some issue
 
 But, we configure our AWS credentials using the ARN value from the IAM role we created earlier. Then, we log into AWS ECR before we build, tag, and push the image. In this workflow, I have chosen to dynamically set the tag value
 
-```
+```yaml
 name: Deploy to Amazon ECR and SSH into EC2 Instance for Deployment
 
 on:
@@ -111,7 +111,7 @@ I want to call attention to the last line `echo "IMAGE=$ECR_REGISTRY/$ECR_REPOSI
 5. We can now create an EC2 instance. See [this other post](https://elizabethwillard.github.io/starting-ec2-with-jupyter-hub/) for configuring an EC2 instance. We will need to add our our SSH private key to our Github repo secrets. From there, we can append this to our Github Actions workflow file, which echoes the SSH value from our Github Secrets to a file called ssh_private_key. The Github Actions runner then enables read and write permissions on this file in order to use it to access our EC2 Instance. We then copy the contents of our Nginx folder, which has 
 
 
-```
+```yaml
     - name: Create SSH key 
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -122,7 +122,7 @@ I want to call attention to the last line `echo "IMAGE=$ECR_REGISTRY/$ECR_REPOSI
 6. We need to create a folder in our Github repo called "nginx" and add a Dockerfile and a .conf file for Nginx to use.
 The project.conf file will look like this:
 
-```
+```yaml
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
@@ -164,7 +164,7 @@ server {
 
 Our Dockerfile will be:
 
-```
+```yaml
 FROM nginx:1.15.8
 
 RUN rm /etc/nginx/conf.d/default.conf
@@ -173,7 +173,7 @@ CMD ["nginx", "-g", "daemon off;"]
 ```
 
 7. From here, we can add the next step to our Github Actions workflow, which uses the ssh_private_key file we created earlier in the workflow to copy the contents of the /nginx directory to the EC2 instance. We then echo the $IMAGE variable to a file called .env, which will be used in our Docker-Compose workflow to take advantage of the dynamically tagged image in the ECR repository. This .env file is copied over to the EC2 Instance as well. 
-```
+```yaml
 
     - name: Copy files over and deploy environment variable for Docker Compose
       env:
@@ -200,7 +200,7 @@ docker-compose --env-file .env up -d
 And in this final step, we copy a docker-compose.yml file from our repo to the EC2 Instance. The docker-compose.yml will look like something similar to this:
 
 The Docker Compose File
-```
+```yaml
 services:
   app:
     env_file:
@@ -235,7 +235,7 @@ networks:
 ```
 
 Now, we can add this to our Github Actions workflow.
-```
+```yaml
     - name: Copy contents of deploy.sh and execute deploy.sh  
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -247,7 +247,7 @@ Now, we can add this to our Github Actions workflow.
 
 The entire workflow should look like 
 
-```
+```yaml
 name: Deploy to Amazon ECR and SSH into EC2 Instance for Deployment
 
 on:
