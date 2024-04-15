@@ -108,7 +108,7 @@ jobs:
 
 I want to call attention to the last line `echo "IMAGE=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT`. This effectively exports the value of image to your Github Action runner output. This output can then be used in later steps of the workflow. See [here](https://docs.github.com/en/actions/using-jobs/defining-outputs-for-jobs).
 
-5. We can now create an EC2 instance. We will need to add our our SSH private key to our Github repo secrets. From there, we can append this to our Github Actions workflow file, which echoes the SSH value from our Github Secrets to a file called ssh_private_key. The Github Actions runner then enables read and write permissions on this file in order to use it to access our EC2 Instance. We then copy the contents of our Nginx folder, which has 
+5. We can now create an EC2 instance. See [this other post](https://elizabethwillard.github.io/starting-ec2-with-jupyter-hub/) for configuring an EC2 instance. We will need to add our our SSH private key to our Github repo secrets. From there, we can append this to our Github Actions workflow file, which echoes the SSH value from our Github Secrets to a file called ssh_private_key. The Github Actions runner then enables read and write permissions on this file in order to use it to access our EC2 Instance. We then copy the contents of our Nginx folder, which has 
 
 
 ```
