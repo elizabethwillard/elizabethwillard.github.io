@@ -2,7 +2,7 @@
 layout: post
 title: Using Github Actions to Push a Containerized Streamlit Application to ECR and Deploy to an EC2 Instance
 categories: [technical]
-hidden: true
+hidden: false
 ---
 
 
