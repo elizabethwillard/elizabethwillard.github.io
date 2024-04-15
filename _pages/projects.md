@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 ## Current Projects
 
-
+[Prediction the next available charging spot for your EV](https://github.com/denny-lehman/charge-buddy)
 
 ## Completed Projects
 
