@@ -9,6 +9,9 @@ hidden: false
 Recently, I used Github Actions to automate the deployment of a Streamlit application I was using for my capstone project, Charge Buddy. 
 As we draw closer to the finish line, the risk that manual deployment introduces becomes too much at a certain point. Today, I wanted to go over the steps I took to write a simple Github Actions workflow that automated the deployment of our Streamlit application, along with a NGINX container that was used as a reverse proxy, since Streamlit cannot use HTTPS on its own, but a NGINX reverse proxy can enable us to use HTTPS in our application. 
 
+![Blank diagram (2)](https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/41f7d78d-7b59-4444-883e-5717a6b6bf8c)
+
+
 1. Create an Elastic Container Registry repository to store your Docker images
 
 2. Configure an IAM role for Github Actions to use 
@@ -46,6 +49,7 @@ The inline policy should resemble the code above.
 
 4. I initially began by adapting the workflow from [Deploying to Amazon ECS](https://docs.github.com/en/actions/deployment/deploying-to-your-cloud-provider/deploying-to-amazon-elastic-container-service)
 This portion of the workflow is fairly simple to follow. I was having some issues with the memory limitations of the Github Action runner, so I added a step to delete the /opt/hostedtoolcache in order to free up some more room.
+
 But, we configure our AWS credentials using the ARN value from the IAM role we created earlier. Then, we log into AWS ECR before we build, tag, and push the image. In this workflow, I have chosen to dynamically set the tag value
 
 ```
