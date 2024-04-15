@@ -4,3 +4,6 @@ title: Using Github Actions to Containerize a Streamlit application and push to 
 categories: [technical]
 hidden: true
 ---
+
+
+Recently, I used Github Actions to automate the deployment of a Streamlit application I was using for my capstone project, Charge Buddy. 
