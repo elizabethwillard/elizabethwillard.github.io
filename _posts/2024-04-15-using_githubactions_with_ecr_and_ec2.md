@@ -7,7 +7,7 @@ hidden: false
 
 
 Recently, I used Github Actions to automate the deployment of a Streamlit application I was using for my capstone project, Charge Buddy. 
-As we draw closer to the finish line, the risk that manual deployment introduces becomes too much at a certain point. Today, I wanted to go over the steps I took to write a simple Github Actions workflow that automated the deployment of our Streamlit application, along with a NGINX container that was used as a reverse proxy, since Streamlit cannot use HTTPS on its own, but a NGINX reverse proxy can enable us to use HTTPS in our application. 
+As we draw closer to the finish line, the risk that manual deployment introduces becomes too much at a certain point. Today, I wanted to go over the steps I took to write a simple Github Actions workflow that automated the deployment of our Streamlit application, along with a NGINX container for a reverse proxy. Streamlit cannot use HTTPS on its own, but a NGINX reverse proxy can enable us to use HTTPS in our application. 
 
 ![Blank diagram (2)](https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/41f7d78d-7b59-4444-883e-5717a6b6bf8c)
 
@@ -21,8 +21,10 @@ Audience: sts.amazonaws.com
 Github Organization (This is the name of the owner of the Github repo you are working with)
 
 You can skip over attaching policies to this role at this moment. 
-3. Navigate to the IAM Role you created and go to "Permission Policies" -> "Add Permissions" -> Create an inline policy 
+3. Navigate to the IAM Role you created and go to "Permission Policies" -> "Add Permissions" -> Create an inline policy. 
+
 For the ECR-Registry Value, you will be using your AWS account ID, which should be the long numeric value in the URI portion of the ECR registry entry. 
+
 The [AWS Documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/Repositories.html) says "By default, your account has read and write access to the repositories in your default registry (aws_account_id.dkr.ecr.region.amazonaws.com)."
 ```
 {
@@ -108,7 +110,9 @@ jobs:
 
 I want to call attention to the last line `echo "IMAGE=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT`. This effectively exports the value of image to your Github Action runner output. This output can then be used in later steps of the workflow. See [here](https://docs.github.com/en/actions/using-jobs/defining-outputs-for-jobs).
 
-5. We can now create an EC2 instance. See [this other post](https://elizabethwillard.github.io/starting-ec2-with-jupyter-hub/) for configuring an EC2 instance. We will need to add our our SSH private key to our Github repo secrets. From there, we can append this to our Github Actions workflow file, which echoes the SSH value from our Github Secrets to a file called ssh_private_key. The Github Actions runner then enables read and write permissions on this file in order to use it to access our EC2 Instance. We then copy the contents of our Nginx folder, which has 
+5. We can now create an EC2 instance. See [this other post](https://elizabethwillard.github.io/starting-ec2-with-jupyter-hub/) for configuring an EC2 instance. We will need to add our our SSH private key to our Github repo secrets.
+  
+From there, we can append the code below to our Github Actions workflow file, which echoes the SSH value from our Github Secrets to a file called ssh_private_key. The Github Actions runner then enables read and write permissions on this file in order to use it to access our EC2 Instance. We then copy the contents of our Nginx folder, which has 
 
 
 ```yaml
