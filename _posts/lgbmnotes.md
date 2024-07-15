@@ -7,4 +7,4 @@ hidden: true
 Leverage this[^1]
 
 ---
-[^1]: (https://lightgbm.readthedocs.io/en/stable/Features.html)[LightGBM Read the Docs]
+[^1]: [LightGBM Read the Docs](https://lightgbm.readthedocs.io/en/stable/Features.html)
