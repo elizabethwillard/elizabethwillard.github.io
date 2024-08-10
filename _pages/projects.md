@@ -3,11 +3,9 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
-## Current Projects
 
+## Projects
 [Prediction the next available charging spot for your EV](https://github.com/denny-lehman/charge-buddy)
-
-## Completed Projects
 
 [Identifying fractures in spinal images](https://github.com/elizabethwillard/rsna-cervical-spine-detection)
 
