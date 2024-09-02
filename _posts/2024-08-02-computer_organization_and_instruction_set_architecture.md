@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Computer Organization: Von Neumann and Harvard 
+title: Understanding Computer Organization and Instruction Set Architecture
 categories: Technical
 date: 2024-08-02
 ---
