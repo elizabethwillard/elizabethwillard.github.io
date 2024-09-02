@@ -32,9 +32,11 @@ They have some degree of separation between program instruction and data, which 
 In essence, the instruction set architecture abstracts the hardware layer from the software layer, by providing a language that enables a program to run correctly. 
 
 In other words (and bear with me), let's pretend you have a dog/cat/horse/etc named Harvard. You can give Harvard commands like you would any other pet, as long as they're a single-key word or some other short command. We can map an action to a keyword, like so:
-**action:                       keyword:**
-retrieval of a ball -> "fetch!"
-sitting down        ->  "sit!"
+| action    | keyword |
+| -------- | ------- |
+| retrieval of a ball  | fetch!    |
+| sitting down | sit!     |
+
 
 and so-on. 
 
