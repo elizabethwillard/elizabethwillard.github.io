@@ -11,7 +11,8 @@ date: 2024-08-02
 I recently just purchased a Macbook Air, which has an M3 chip. After doing some reading on this chip, I wanted to delve into some of the most crucial fundamentals in computer architecture. This blog post delves into the intricate world of instruction set architectures (ISAs), the differences between CISC and RISC, the nuances of von Neumann and Harvard architectures, and the evolution of popular implementations like x86 and ARM. We will also dive into some real-life examples like the M-series from Mac.  Let's begin with some hardware.
 ### Computer Organization
 Computer architecture is the combination of computer organization and instruction set architecture. Computer organization is essentially a high-level blueprint that details on an operational-level how a computing system works. Von Neumann and Harvard are the most common organization principles. 
-![[Screenshot 2024-08-14 at 11.45.28 AM.png]]
+<img width="743" alt="Screenshot 2024-08-14 at 11 45 28 AM" src="https://github.com/user-attachments/assets/77e9005c-bc92-4b37-8b65-cc93441a15f1">
+
 #### Von Neumann (aka Princeton)
 
 Introduced by John von Neumann in 1945, the von Neumann computer architecture utilized a single-memory approach to both program instructions and data. When memory holds both instructions and data together, this is known as a von Neumann machine. Instructions are executed sequentially, ensuring a linear and orderly process. There is a downside to von Neumann architecture styles though, and that is because of the single-memory location for both instructions and data, which leads to security issues due to exploitation of this vulnerability. 
@@ -42,8 +43,9 @@ This mapping of an action to a keyword helps form the foundation of the intuitiv
 *Instruction set architecture* of a computer defines the interface between software and hardware. Some other examples of ISAs are MIPS and x86. 
 
 When designing a CPU, one of the questions that designers have to ask themselves is "Will the CPU be CISC or RISC?" but what does that mean?
-![[Pasted image 20240902094158.png]]
-> From: https://vardhaman.org/wp-content/uploads/2021/03/CO.pdf
+
+![Pasted image 20240902094158](https://github.com/user-attachments/assets/c9f92efd-ce11-4b31-9463-8ee0768cba1e)
+
 
 An instruction set architecture is usually classified one of two ways.  
 
