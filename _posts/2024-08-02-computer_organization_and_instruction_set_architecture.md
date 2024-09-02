@@ -5,7 +5,7 @@ categories: Technical
 date: 2024-08-02
 ---
 
-> *“Electronic elements! We can use electronic elements to make gate circuits and combine them into computers! Such computers will be many times faster and take up much less space. I estimate that a small building will be sufficient… At the same time, due to the invention of calculus and the Von Neumann architecture computer, the foundation was set for the quantitative mathematical analysis of the motion of three bodies.”* - Cixin Liu "The Three Body Problem"
+> *“Electronic elements! We can use electronic elements to make gate circuits and combine them into computers! Such computers will be many times faster and take up much less space. I estimate that a small building will be sufficient… At the same time, due to the invention of calculus and the Von Neumann architecture computer, the foundation was set for the quantitative mathematical analysis of the motion of three bodies.”* - Cixin Liu *The Three Body Problem*
 
 
 I recently just purchased a Macbook Air, which has an M3 chip. After doing some reading on this chip, I wanted to delve into some of the most crucial fundamentals in computer architecture. This blog post delves into the intricate world of instruction set architectures (ISAs), the differences between CISC and RISC, the nuances of von Neumann and Harvard architectures, and the evolution of popular implementations like x86 and ARM. We will also dive into some real-life examples like the M-series from Mac.  Let's begin with some hardware.
