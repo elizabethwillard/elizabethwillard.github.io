@@ -57,7 +57,8 @@ An instruction set architecture is usually classified one of two ways.
 **Complex instruction set computers** (CISC, predecessor of RISC)
 - CISC has instructions that are capable of carrying out multiple large operations.
 - Very little RAM is needed to store the instructions, but building the complex instructions into the hardware is where most effort goes.
-- Attempts to minimize number of instructions per program 
+- Attempts to minimize number of instructions per program
+  
 **Reduced instruction set computers** (RISC)
 - RISC provides fewer and simpler instructions, so they can be executed in pipelined processors, the instructions should be executed within one clock cycle. 
 - Reduces the cycles per instruction at the cost of the number of instructions per program.
