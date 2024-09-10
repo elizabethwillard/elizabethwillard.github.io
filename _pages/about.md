@@ -21,6 +21,7 @@ B.S in Computer Engineering and a dual minor in English and Mathematics, MS in D
 **Texas Instruments** | May 2020 - August 2020 | *Computer Integrated Manufacturing Intern*
 - Designed and developed data pipeline using knowledge of SQL and C# to automatically query and generate logs of manufacturing machinery errors 
 - Designed user application to interface with data from manufacturing machinery using a REST API and React.JS to improve production support and engineer response time. Completed project ahead of schedule
+
 ### Skills
 - Proficiency in Python (numpy, Scikit-learn, Keras), MATLAB, SQL, 
     - Developed personal project utilizing 3D segmentation with ResNet backbone and U-Net decoder pipelined into an LSTM to detect spinal fractures in CT scans 
@@ -33,6 +34,6 @@ B.S in Computer Engineering and a dual minor in English and Mathematics, MS in D
 -  Awarded the Grace Hopper Scholarship in 2019 to attend the Grace Hopper Conference
 
 
-
-
+### Teaching
+- Currently facilitating and teaching a Saturday workshop on [introductory Python programming at Factory3](https://factory3.org/classes/intro-to-python-programming).
 
