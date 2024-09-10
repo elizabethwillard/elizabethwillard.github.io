@@ -11,7 +11,8 @@ date: 2024-08-02
 I recently just purchased a Macbook Air, which has an M3 chip. After doing some reading on this chip, I wanted to delve into some of the most crucial fundamentals in computer architecture. This blog post delves into the intricate world of instruction set architectures (ISAs), the differences between CISC and RISC, the nuances of von Neumann and Harvard architectures, and the evolution of popular implementations like x86 and ARM. We will also dive into some real-life examples like the M-series from Mac.  Let's begin with some hardware.
 ### Computer Organization
 Computer architecture is the combination of computer organization and instruction set architecture. Computer organization is essentially a high-level blueprint that details on an operational-level how a computing system works. Von Neumann and Harvard are the most common organization principles. 
-<img width="743" alt="Screenshot 2024-08-14 at 11 45 28 AM" src="https://github.com/user-attachments/assets/77e9005c-bc92-4b37-8b65-cc93441a15f1">
+
+<img width="650" alt="Screenshot 2024-08-14 at 11 45 28 AM" src="https://github.com/user-attachments/assets/77e9005c-bc92-4b37-8b65-cc93441a15f1">
 
 #### Von Neumann (aka Princeton)
 
@@ -27,14 +28,18 @@ The traditional definition of a Harvard design can't actually be physically real
 They have some degree of separation between program instruction and data, which mitigates the effect of security vulnerabilities mentioned in the von Neumann architecture. The goal of the modified Harvard architecture is to loosen the delineation between program instructions and data in memory.
 
  Initial iterations of the ARM architecture leveraged a von Neumann architecture style, up until ARM7, whereas ARM9 was the first generation that leveraged a modified Harvard architecture. ARM is a load-store architecture; this means that data operands must be loaded into the CPU first, then back to main memory to save the results. and most modern architectures fall under the umbrella of modified Harvard architectures. So how do we actually execute programs on this hardware?
+ 
 ### Instruction Set Architecture
 
 In essence, the instruction set architecture abstracts the hardware layer from the software layer, by providing a language that enables a program to run correctly. 
 
 In other words (and bear with me), let's pretend you have a dog/cat/horse/etc named Harvard. You can give Harvard commands like you would any other pet, as long as they're a single-key word or some other short command. We can map an action to a keyword, like so:
-**action:                       keyword:**
-retrieval of a ball -> "fetch!"
-sitting down        ->  "sit!"
+
+| action    | keyword |
+| -------- | ------- |
+| retrieval of a ball  | fetch!    |
+| sitting down | sit!     |
+
 
 and so-on. 
 
@@ -52,7 +57,8 @@ An instruction set architecture is usually classified one of two ways.
 **Complex instruction set computers** (CISC, predecessor of RISC)
 - CISC has instructions that are capable of carrying out multiple large operations.
 - Very little RAM is needed to store the instructions, but building the complex instructions into the hardware is where most effort goes.
-- Attempts to minimize number of instructions per program 
+- Attempts to minimize number of instructions per program
+  
 **Reduced instruction set computers** (RISC)
 - RISC provides fewer and simpler instructions, so they can be executed in pipelined processors, the instructions should be executed within one clock cycle. 
 - Reduces the cycles per instruction at the cost of the number of instructions per program.
