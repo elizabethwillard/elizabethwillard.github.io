@@ -4,11 +4,14 @@ title: About
 permalink: /about/
 ---
 
+Need a data expert or cloud computing expertise for your business? I am always happy to chat and you can reach out to me through LinkedIn or through email via the icons at the bottom. 
+
 B.S in Computer Engineering and a dual minor in English and Mathematics, MS in Data Science from University of California, Berkeley. 
 
 ### Work Experience
 **ISO-New England** | July 2024 - Present | *Load Forecast Data Scientist*
-- Leveraging software engineering methodology to create reusable software packages and construct robust data pipelines
+- Leveraging software engineering methodology to create reusable software packages and construct robust data pipelines 
+- Designed day-ahead operational Matlab-dependent process into an AWS-friendly process leveraging CI/CD and robust logging 
 - Researching and leveraging forecasting developments within research community 
 
 **Idexx Laboratories** | August 2021 - May 2024 | *Embedded Software Engineer I*
@@ -35,5 +38,6 @@ B.S in Computer Engineering and a dual minor in English and Mathematics, MS in D
 
 
 ### Teaching
-- Currently facilitating and teaching a Saturday workshop on [introductory Python programming at Factory3](https://factory3.org/classes/intro-to-python-programming).
+- Currently facilitating and teaching a Saturday workshop on [introductory Python programming at Factory3](https://factory3.org/classes/intro-to-python-programming)
+- Upcoming course on electronic stumpwork at Maine College of Art and Design as a guest artist/lecturer. 
 
