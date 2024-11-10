@@ -2,76 +2,59 @@
 layout: post
 title: The Evolution of Instruction Set Architecture
 categories: Technical
-date: 2024-08-21
-hidden: True
+date: 2024-11-10
+hidden: False
 ---
 
-Welcome to part 2 of my series on Computer Architecture and Organization. In the [first part](https://elizabethwillard.github.io/computer_organization_and_instruction_set_architecture/), we covered the difference between instruction set architecture types like RISC and CISC, computer organization principles like Von Neumann and Harvard. We will now dive into the historical evolution of ISAs, and how the taxonomic classification of a processor as being RISC or CISC is no longer truly applicable to processors of today. 
+Welcome to part 2 of my series on Computer Architecture and Organization. In the [first part](https://elizabethwillard.github.io/computer_organization_and_instruction_set_architecture/), we covered the difference between instruction set architecture types like RISC and CISC, computer organization principles like Von Neumann and Harvard. We will now dive into the historical evolution of ISAs and their respective processors into their most current processor architectures, x64 and RISC-V, and how the taxonomic classification of a processor as being RISC or CISC is no longer truly applicable to processors of today.
 
-ARM, as discussed in the last post, is one of the dominating ISAs on the market currently available, but it leverages RISC. What about CISC-friendly ISAs?
+ARM, as discussed in the last post, is one of the dominating ISAs on the market currently available, that leverages RISC, but is facing fierce competition from RISC-V. What about CISC-friendly ISAs?
 
+## x86 and x64
 
 #### x86
-x86 refers to the 16-bit and 32-bit instruction set architecture from a processor family that began with Intel 8086, hence the "86". "x86" can refer to members of this family as shorthand. x86 as an instruction set architecture is a CISC configuration with only 8 registers. 
+x86 refers to the 16-bit and 32-bit instruction set architecture from a processor family that began with Intel 8086, hence the "86". "x86" can refer to members of this family as shorthand. x86 as an instruction set architecture is a CISC configuration with only 8 registers. Later iterations of Intel processors drop the numeric naming and receive names like Pentium, Core, Xeon, and so forth. x86 processors nowadays will boot into the 16-bit operating mode of the original Intel 8086, which is known as real mode. Real mode has commpatability with software written for the Intel 8086, but normally, this model is used as a bootloader into a protected mode operating system. 
 
+
+#### x64 
 From the base x86, the x86-64 came next. AMD64 was the processor architecture specification that extended the x86 processor and instruction set to 64-bits. AMD then released the Opteron, an AMD64 processor. Intel also developed an AMD64-compatible architecture called Xeon. Because of this, the architecture was called x86-64, then shortened to x64. Because x64 is a 64-bit extension of the 32-bit x86 architecture, then most software written for user-mode applications in 32-bit should execute without modification in a processor running in 64-bit mode. 
 
 
+
+## ARM 
+
+ARM architecture defines a wide variety of RISC processors that are applicable in many use-cases. These processors are usually desired for designs where high-performance, low power consumption, and small size are needed, such as smartwatches, phones, tablets, etc. 
+
+#### 32-bit ARM
+
+32-bit ARM encompasses architectures like ARMv7. The popularity of ARM instruction sets in cell phones and other small devices originates with the selection of the AM 6502, which was the 16-bit microprocessor, for the wildly unsuccessful Apple Newton PDA. 
+
+#### 64-bit ARM
+
+The 64-bit verison of ARM is known as AArch64 or ARMv8 and has a corresponding instruction set known as A64. Because the 64-bit instruction set is an expansion of the 32-bit instruction set, 32-bit code is backwards compatible with the 64-bit processor. ARMv8 will be found in most modern small-computing devices found today. 
+Modern ARM processors support ARM as an instruction set, and many also support a variable-length instruction set called T32 (The 'T' stood for Thumb) which is valuable in situations where memory is scarce. instruction sets and can even switch between the two. 
+
+Windows has recently announced the ability to run devices with ARM-processors. 
+
 #### RISC-V
 
-RISC-V is an open-source specification for a RISC processor. There are a multitude of extensions that can be applied to this ISA to support a wide breadth of applications. Open source RISC-V would allow more RISC-V processors to come onto the market. 
+One of the biggest developments in processor architecture and instruction set development is the creation of RISC-V, which was announced in 2014. The RISC-V project wanted to incorporate 'lessons learned' from years of processor design and be used for a wide breadth of applications from micro-devies to cloud server multiprocessors. RISC-V processors are used in artificial intelligence, embedded systems, IoT Edge processing and more. 
+
+RISC-V is an open-source specification for a RISC processor. There are a multitude of extensions that can be applied to this ISA to support a wide breadth of applications. Open source RISC-V would allow more RISC-V processors to come onto the market. In comparison, x86 and ARM are both proprietary architectures. 
+
+The base RISC-V is a 32-bit processor with 31 general-purpose registers, meaning all instructions are 32 bits long. 
+
+Most high end and portable devices are designed around processors that use ARMv8-a. While RISC-V isn't utilized by personal desktop CPUs, there's always the possibility these could be developed in the future, especially if more tech companies become more interested and involved. 
 
 
-
-Certainly, I'll elaborate on section 4: Modern ISA developments. This section will cover the significant advancements in instruction set architectures in recent years.
-
-Modern ISA Developments
-
-The landscape of instruction set architectures has evolved significantly in recent years, driven by technological advancements and changing computational needs. Here are some key developments:
-a) x86-64 (AMD64):
-
-Introduced by AMD in 2003
-64-bit extension of the x86 architecture
-Backward compatibility with 32-bit x86 code
-Widely adopted in personal computers and servers
-
-b) ARM architectures:
-
-ARMv8: Introduced 64-bit computing (AArch64) alongside 32-bit support
-Focus on energy efficiency, crucial for mobile devices
-Expanding into server and desktop markets (e.g., Apple's M1 chips)
-
-c) RISC-V:
-
-Open-source ISA introduced in 2010
-Modular design with a small base ISA and optional extensions
-Gaining traction in academia, research, and industry
-Potential to disrupt the ISA landscape due to its open nature
-
-d) Vector extensions:
-
-ARM's SVE (Scalable Vector Extension) and SVE2
-x86's AVX (Advanced Vector Extensions)
-RISC-V's vector extension
-Enhance performance for data-parallel applications
-
-e) Specialized instructions:
-
-Cryptography extensions (e.g., AES-NI for x86, ARMv8 Crypto Extension)
-Machine learning instructions (e.g., Intel DL Boost, ARM's ML extensions)
-
-f) Hardware-assisted virtualization:
-
-Intel VT-x and AMD-V for x86
-ARM Virtualization Extensions
-Improve performance and security of virtual machines
-
-
-
-The x86 is arguably the only chip available that retains CISC, but in all honesty, as time moves on, the lines between RISC and CISC have become much more blurry. Some have argued that we are in a Post-RISC era, which is something I agree with, as ISAs used today are a mixture of features from both RISC and CISC, or neither. 
-
-ISAs are being designed to leverage diverse computing resources. 
 **Additional Resources and References:**
 - [Learn about RISC-V](https://github.com/riscv/learn/tree/main?tab=readme-ov-file)
 
 - [Beyond RISC: The Post-RISC Architecture](https://www.cse.msu.edu/~enbody/postrisc/postrisc2.htm)
+can
+
+- [Windows on ARM](https://learn.microsoft.com/en-us/windows/arm/overview)
+
+- Modern Computer Organization and Architecture, Jim Ledin
+
+- Computer Organization and Design RISC-V Ed.,John Hennessey and David Patternson
