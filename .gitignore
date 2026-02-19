@@ -10,3 +10,6 @@ package.json
 *.gem
 *.gemspec
 .jekyll-cache
+.github/instructions/copilot-sdk-python.instructions.md
+.github/instructions/python.instructions.md
+.github/prompts/comment-code-generate-a-tutorial.prompt.md
