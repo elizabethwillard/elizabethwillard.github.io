@@ -99,12 +99,7 @@ href = "/about"
 [config.home]
 layout = "grid"
 
-[config.home.quote]
-text = [
-  "Machine learning, load forecasting,",
-  "data pipelines, and the occasional",
-  "craft project.",
-]
+
 image = "/images/eliz.jpg"
 
 [config.home.intro]
