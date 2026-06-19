@@ -527,74 +527,12 @@ git commit -m "feat: configure giscus comments"
 
 ---
 
-### Task 8: Add GA4 analytics
+### Task 8: ~~Add GA4 analytics~~ — SKIPPED for v1
 
-**Files:**
-- Create: `src/components/GoogleAnalytics.astro`
-- Modify: `src/components/BaseHead.astro`
-
-**Interfaces:**
-- Produces: GA4 gtag snippet on every page when a measurement ID is set.
-
-- [ ] **Step 1: Create the GA4 property (manual, one-time)**
-
-In Google Analytics, create a new **GA4** property for `elizabethwillard.github.io` and copy its Measurement ID (`G-XXXXXXXXXX`). (The old `UA-43339302-11` is dead and is not reused.)
-
-- [ ] **Step 2: Create the analytics component**
-
-`src/components/GoogleAnalytics.astro`:
-
-```astro
----
-// Renders the GA4 gtag snippet. Set GA_ID to your Measurement ID (G-XXXXXXXXXX).
-// Empty string disables analytics (e.g. local dev).
-const GA_ID = import.meta.env.PUBLIC_GA_ID ?? '';
----
-{GA_ID && (
-  <>
-    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
-    <script is:inline define:vars={{ GA_ID }}>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){ dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', GA_ID);
-    </script>
-  </>
-)}
-```
-
-- [ ] **Step 3: Include it in BaseHead.astro**
-
-In `src/components/BaseHead.astro`, add to the import block (top frontmatter):
-
-```js
-import GoogleAnalytics from './GoogleAnalytics.astro';
-```
-
-And add the component just before the closing of the head markup (after the Twitter meta tags at the end of the file):
-
-```astro
-<GoogleAnalytics />
-```
-
-- [ ] **Step 4: Set the ID and verify**
-
-Create `.env` in the repo root (it is already gitignored by the theme):
-
-```bash
-echo "PUBLIC_GA_ID=G-XXXXXXXXXX" > .env   # use the real ID
-npm run build
-grep -rl "googletagmanager.com/gtag" dist/index.html
-```
-
-Expected: match. Confirm `.env` is NOT tracked: `git status --porcelain .env` prints nothing.
-
-- [ ] **Step 5: Commit (component + BaseHead only, not .env)**
-
-```bash
-git add src/components/GoogleAnalytics.astro src/components/BaseHead.astro
-git commit -m "feat: add GA4 analytics via PUBLIC_GA_ID"
-```
+**Decision (2026-06-19):** Analytics is skipped for the initial migration. Do
+not create a `GoogleAnalytics.astro` component, do not modify `BaseHead.astro`
+for analytics, and do not add any `PUBLIC_GA_ID` wiring. GA4 can be added in a
+later follow-up. No work in this task.
 
 ---
 
@@ -713,21 +651,15 @@ Edit `.github/workflows/jekyll-gh-pages.yml` — replace the `build` job's `step
         run: npm ci
       - name: Build with Astro
         run: npm run build
-        env:
-          PUBLIC_GA_ID: ${{ vars.PUBLIC_GA_ID }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 ```
 
-Leave the `deploy` job (already on `deploy-pages@v4`) unchanged. Remove the `jekyll-build-pages` step entirely.
+Leave the `deploy` job (already on `deploy-pages@v4`) unchanged. Remove the `jekyll-build-pages` step entirely. (No GA env: analytics is skipped for v1 per Task 8.)
 
-- [ ] **Step 2: Add the GA4 repo variable (manual)**
-
-In the repo: Settings → Secrets and variables → Actions → **Variables** → add `PUBLIC_GA_ID` = `G-XXXXXXXXXX`. (A repo *variable*, not a secret — GA IDs are public.)
-
-- [ ] **Step 3: Validate the workflow YAML locally**
+- [ ] **Step 2: Validate the workflow YAML locally**
 
 ```bash
 python3 -c "import yaml,sys; yaml.safe_load(open('.github/workflows/jekyll-gh-pages.yml')); print('YAML OK')"
@@ -735,7 +667,7 @@ python3 -c "import yaml,sys; yaml.safe_load(open('.github/workflows/jekyll-gh-pa
 
 Expected: `YAML OK`.
 
-- [ ] **Step 4: Commit**
+- [ ] **Step 3: Commit**
 
 ```bash
 git add .github/workflows/jekyll-gh-pages.yml
@@ -788,7 +720,6 @@ Verify in the browser / via curl:
 - [ ] `dist/sitemap-index.xml` exists.
 - [ ] Old URL redirects: open `http://localhost:4321/learningaboutrl/` → lands on `/blog/learningaboutrl/`.
 - [ ] giscus markup present on a post page.
-- [ ] GA snippet present (build ran with `PUBLIC_GA_ID`).
 
 - [ ] **Step 4: Commit cleanup**
 
