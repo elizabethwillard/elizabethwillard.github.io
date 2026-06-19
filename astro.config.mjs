@@ -7,6 +7,9 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
 import expressiveCode from 'astro-expressive-code';
+import remarkMath from 'remark-math';
+import rehypeMathjax from 'rehype-mathjax/svg';
+import { unified } from '@astrojs/markdown-remark';
 
 const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
 const customSite = process.env.SITE_URL;
@@ -34,6 +37,13 @@ export default defineConfig({
   site: resolvedSite,
   base: resolvedBase,
   integrations: [expressiveCode(), mdx(), sitemap()],
+
+  markdown: {
+    processor: unified({
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeMathjax],
+    }),
+  },
 
   vite: {
     plugins: [tailwindcss()],
