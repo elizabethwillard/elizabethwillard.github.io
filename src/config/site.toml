@@ -121,40 +121,6 @@ excludeDraft = true
 startDate = ""
 dateArchiveBaseHref = ""
 
-[[config.home.navigation]]
-icon = "compass"
-title = "About"
-subtitle = "Background, experience, and skills"
-href = "/about"
-
-[[config.home.navigation]]
-icon = "pen"
-title = "Blog"
-subtitle = "Notes on tech"
-href = "/blog"
-
-[[config.home.navigation]]
-icon = "briefcase"
-title = "Projects"
-subtitle = "Personal work"
-href = "/projects"
-
-[[config.home.navigation]]
-icon = "github"
-title = "GitHub"
-subtitle = "Code, experiments, and tools"
-href = "https://github.com/elizabethwillard"
-
-[[config.home.connect]]
-label = "GitHub"
-href = "https://github.com/elizabethwillard"
-icon = "github"
-
-[[config.home.connect]]
-label = "LinkedIn"
-href = "https://www.linkedin.com/in/elizabeth-willard"
-icon = "compass"
-
 [[config.home.connect]]
 label = "Email"
 href = "mailto:ewillard42@gmail.com"
