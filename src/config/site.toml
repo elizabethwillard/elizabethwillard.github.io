@@ -107,7 +107,7 @@ image = "/images/eliz.jpg"
 
 [config.home.intro]
 title = "Hi, I'm Elizabeth"
-name = "Elizabeth Willard"
+name = ""
 body = [
   "I'm a Load Forecast Data Scientist at ISO-New England, where I build reusable software packages and robust data pipelines for short-term load forecasting.",
   "Previously I was an Embedded Software Engineer at IDEXX Laboratories, and before that an intern at Texas Instruments building manufacturing data pipelines.",
@@ -135,18 +135,6 @@ icon = "pen"
 title = "Blog"
 subtitle = "Notes on tech"
 href = "/blog"
-
-[[config.home.navigation]]
-icon = "briefcase"
-title = "Projects"
-subtitle = "Repositories and Project Links"
-href = "/projects"
-
-[[config.home.navigation]]
-icon = "github"
-title = "GitHub"
-subtitle = "Code, experiments, and tools"
-href = "https://github.com/elizabethwillard"
 
 [[config.home.connect]]
 label = "GitHub"
