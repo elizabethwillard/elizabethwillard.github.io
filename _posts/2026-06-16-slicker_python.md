@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Slicker Python Workflow (For Me)
+title: A Slicker Python Workflow (For Me) + Small Update
 categories: Technical
 date: 2026-06-18
 hidden: False
