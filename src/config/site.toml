@@ -99,7 +99,10 @@ href = "/about"
 [config.home]
 layout = "grid"
 
-
+[config.home.quote]
+text = [
+  "Notes on tech and crafts"
+]
 image = "/images/eliz.jpg"
 
 [config.home.intro]
@@ -120,6 +123,39 @@ showHeatmapLatest = true
 excludeDraft = true
 startDate = ""
 dateArchiveBaseHref = ""
+
+[[config.home.navigation]]
+icon = "compass"
+title = "About"
+subtitle = "About me"
+href = "/about"
+
+[[config.home.navigation]]
+icon = "pen"
+title = "Blog"
+subtitle = "Notes on tech"
+href = "/blog"
+
+[[config.home.navigation]]
+icon = "briefcase"
+title = "Projects"
+href = "/projects"
+
+[[config.home.navigation]]
+icon = "github"
+title = "GitHub"
+subtitle = "Code, experiments, and tools"
+href = "https://github.com/elizabethwillard"
+
+[[config.home.connect]]
+label = "GitHub"
+href = "https://github.com/elizabethwillard"
+icon = "github"
+
+[[config.home.connect]]
+label = "LinkedIn"
+href = "https://www.linkedin.com/in/elizabeth-willard"
+icon = "compass"
 
 [[config.home.connect]]
 label = "Email"
