@@ -668,7 +668,7 @@ git commit -m "ci: build and deploy with Astro instead of Jekyll"
 
 **Files:**
 - Delete: `_config.yml`, `_layouts/`, `_includes/`, `_sass/`, `_pages/`, `index.html`, `404.md`, `search.json`, root `assets/`, `_posts/` (including `_posts/drafts/`)
-- Remove: temporary `src/content/blog/_mathcheck.md`
+- Remove: temporary `src/content/blog/mathcheck.md` (renamed from `_mathcheck.md` during Task 2 — the `_` prefix and `draft:true` both prevent it building, so it was made a live post to verify; must be deleted here)
 
 **Interfaces:**
 - Produces: a clean Astro-only repo; live site after merge.
@@ -677,7 +677,7 @@ git commit -m "ci: build and deploy with Astro instead of Jekyll"
 
 ```bash
 git rm -r _config.yml _layouts _includes _sass _pages index.html 404.md search.json assets _posts
-git rm src/content/blog/_mathcheck.md
+git rm src/content/blog/mathcheck.md
 ```
 
 (If `search.json` or root `assets/` does not exist, drop it from the command.)

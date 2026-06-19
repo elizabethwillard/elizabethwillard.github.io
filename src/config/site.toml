@@ -1,0 +1,187 @@
+[config.site]
+title = "Elizabeth Willard"
+description = "Software Engineer — notes on ML, AWS, and systems."
+pageTitle = "Elizabeth Willard"
+pageDescription = "Software engineer writing about machine learning, AWS, computer architecture, and the occasional personal project."
+repository = "https://github.com/elizabethwillard/elizabethwillard.github.io"
+footerNote = "© Elizabeth Willard"
+
+[config.vibe]
+showTrail = true
+
+[config.theme]
+# Available palettes:
+# green-soft, green-vivid, rose-soft, pink-soft, purple-soft, blue-soft, orange-soft, brown-soft
+palette = "green-soft"
+
+[config.code]
+lightTheme = "catppuccin-latte"
+darkTheme = "catppuccin-macchiato"
+lineNumbers = true
+wrap = true
+preserveIndent = true
+collapseStyle = "collapsible-auto"
+
+[config.comments]
+enabled = false
+provider = "giscus"
+show_on_posts = false
+
+[config.search]
+enabled = true
+shortcut = "mod+k"
+placeholder = "Search posts..."
+maxResults = 6
+
+[config.blog]
+postsPerPage = 6
+
+[config.comments.giscus]
+repo = ""
+repo_id = ""
+category = ""
+category_id = ""
+mapping = "pathname"
+strict = "0"
+reactions_enabled = "1"
+emit_metadata = "0"
+input_position = "top"
+light_theme = "light"
+dark_theme = "dark"
+lang = "en"
+loading = "lazy"
+
+[config.comments.utterances]
+repo = ""
+issue_term = "pathname"
+label = "comment"
+theme = "github-light"
+
+[config.comments.waline]
+server_url = ""
+lang = "en"
+dark = "html.dark"
+pageview = true
+comment = true
+
+[config.profile]
+name = "Elizabeth Willard"
+handle = "@elizabethwillard"
+role = "Software Engineer"
+company = ""
+location = ""
+email = "ewillard42@gmail.com"
+website = "https://elizabethwillard.github.io"
+github = "https://github.com/elizabethwillard"
+meta = "Software Engineer"
+avatar = "/images/eliz.jpg"
+
+[[config.topNav.links]]
+label = "Home"
+href = "/"
+
+[[config.topNav.links]]
+label = "Blog"
+href = "/blog"
+
+[[config.topNav.links]]
+label = "Projects"
+href = "/projects"
+
+[[config.topNav.links]]
+label = "Vibe"
+href = "/vibe"
+
+[[config.topNav.links]]
+label = "About"
+href = "/about"
+
+[config.home]
+layout = "grid"
+
+[config.home.quote]
+text = [
+  "Machine learning, load forecasting,",
+  "data pipelines, and the occasional",
+  "craft project.",
+]
+image = "/images/eliz.jpg"
+
+[config.home.intro]
+title = "Hi, I'm Elizabeth"
+name = "Elizabeth Willard"
+body = [
+  "I'm a Load Forecast Data Scientist at ISO-New England, where I build reusable software packages and robust data pipelines for short-term load forecasting.",
+  "Previously I was an Embedded Software Engineer at IDEXX Laboratories, and before that an intern at Texas Instruments building manufacturing data pipelines.",
+  "I hold a B.S. in Computer Engineering from the University of Maine and an M.S. in Data Science from UC Berkeley.",
+  "I write about machine learning, AWS, computer architecture, and the occasional personal project — like 3D spinal-fracture segmentation or dyeing linen.",
+]
+image = "/images/cover.png"
+
+[config.home.latest]
+count = 1
+heatmapWeeks = 24
+showHeatmapLatest = true
+excludeDraft = true
+startDate = ""
+dateArchiveBaseHref = ""
+
+[[config.home.navigation]]
+icon = "compass"
+title = "About"
+subtitle = "Background, experience, and skills"
+href = "/about"
+
+[[config.home.navigation]]
+icon = "pen"
+title = "Blog"
+subtitle = "Notes on ML, AWS, and systems"
+href = "/blog"
+
+[[config.home.navigation]]
+icon = "briefcase"
+title = "Projects"
+subtitle = "Personal and open-source work"
+href = "/projects"
+
+[[config.home.navigation]]
+icon = "github"
+title = "GitHub"
+subtitle = "Code, experiments, and tools"
+href = "https://github.com/elizabethwillard"
+
+[[config.home.connect]]
+label = "GitHub"
+href = "https://github.com/elizabethwillard"
+icon = "github"
+
+[[config.home.connect]]
+label = "LinkedIn"
+href = "https://www.linkedin.com/in/elizabeth-willard"
+icon = "compass"
+
+[[config.home.connect]]
+label = "Email"
+href = "mailto:ewillard42@gmail.com"
+icon = "mail"
+
+[[config.home.connect]]
+label = "RSS"
+href = "/rss.xml"
+icon = "book"
+
+[[config.home.doing]]
+text = "Researching short-term load forecasting methods"
+mark = "01"
+
+[[config.home.doing]]
+text = "Building AWS-native data pipelines at ISO-New England"
+mark = "02"
+
+[[config.home.doing]]
+text = "Writing notes on ML, Python, and systems"
+mark = "03"
+
+[[config.home.doing]]
+text = "Teaching an intro Python workshop at Factory3"
+mark = "04"
