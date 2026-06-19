@@ -472,57 +472,45 @@ git commit -m "feat: configure site.toml with Elizabeth's identity and homepage"
 
 ---
 
-### Task 7: Configure giscus comments
+### Task 7: Disable comments for v1
+
+**Decision (2026-06-19):** giscus is deferred to a later pass. For v1, disable
+comments so no comment box renders and the build does not reference the theme
+author's repo.
 
 **Files:**
-- Modify: `src/config/site.toml` (`[config.comments.giscus]`)
+- Modify: `src/config/site.toml` (`[config.comments]`)
 
 **Interfaces:**
-- Produces: giscus comment box on posts, backed by GitHub Discussions on the blog repo.
+- Produces: no comment UI on posts.
 
-- [ ] **Step 1: Enable Discussions + install giscus app (manual, one-time)**
+- [ ] **Step 1: Disable comments in site.toml**
 
-On `github.com/elizabethwillard/elizabethwillard.github.io`: Settings → General → Features → enable **Discussions**. Then install the **giscus GitHub App** (https://github.com/apps/giscus) and grant it access to this repo.
-
-- [ ] **Step 2: Obtain the giscus IDs**
-
-Go to https://giscus.app, enter the repo `elizabethwillard/elizabethwillard.github.io`, choose mapping = **pathname** and a Discussion **Category** (e.g. "Announcements"). Copy the generated `data-repo-id` and `data-category-id`.
-
-- [ ] **Step 3: Write the real IDs into site.toml**
-
-Replace `[config.comments.giscus]` values:
+In `src/config/site.toml`, set the `[config.comments]` block's `enabled` to false:
 
 ```toml
-[config.comments.giscus]
-repo = "elizabethwillard/elizabethwillard.github.io"
-repo_id = "<data-repo-id from giscus.app>"
-category = "Announcements"
-category_id = "<data-category-id from giscus.app>"
-mapping = "pathname"
-strict = "0"
-reactions_enabled = "1"
-emit_metadata = "0"
-input_position = "bottom"
-light_theme = "light"
-dark_theme = "dark"
-lang = "en"
-loading = "lazy"
+[config.comments]
+enabled = false
+provider = "giscus"
+show_on_posts = false
 ```
 
-- [ ] **Step 4: Build and verify the giscus script is present**
+Leave the `[config.comments.giscus]` / `utterances` / `waline` sub-blocks as the theme shipped them (unused while disabled). Do not add Elizabeth's repo IDs yet.
+
+- [ ] **Step 2: Build and verify no giscus markup is emitted**
 
 ```bash
 npm run build
-grep -rl "giscus" dist/blog/learningaboutrl/index.html
+grep -rl "giscus" dist/blog/learningaboutrl/index.html; echo "exit: $?"
 ```
 
-Expected: match. (Live comment loading requires the deployed site + GitHub App; verify fully after deploy.)
+Expected: no match (grep exit code 1) — comments are off.
 
-- [ ] **Step 5: Commit**
+- [ ] **Step 3: Commit**
 
 ```bash
 git add src/config/site.toml
-git commit -m "feat: configure giscus comments"
+git commit -m "chore: disable comments for v1 (giscus deferred)"
 ```
 
 ---
@@ -719,7 +707,7 @@ Verify in the browser / via curl:
 - [ ] `dist/rss.xml` exists and is valid XML.
 - [ ] `dist/sitemap-index.xml` exists.
 - [ ] Old URL redirects: open `http://localhost:4321/learningaboutrl/` → lands on `/blog/learningaboutrl/`.
-- [ ] giscus markup present on a post page.
+- [ ] Comments disabled: no giscus markup on a post page.
 
 - [ ] **Step 4: Commit cleanup**
 
