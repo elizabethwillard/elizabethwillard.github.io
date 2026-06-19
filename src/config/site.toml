@@ -106,13 +106,13 @@ text = [
 image = "/images/eliz.jpg"
 
 [config.home.intro]
-title = "Hi, I'm Elizabeth"
+title = "I'm Elizabeth"
 name = ""
 body = [
-  "I'm a Load Forecast Data Scientist at ISO-New England, where I build reusable software packages and robust data pipelines for short-term load forecasting.",
+  "I'm a Load Forecast Data Scientist at ISO-New England",
   "Previously I was an Embedded Software Engineer at IDEXX Laboratories, and before that an intern at Texas Instruments building manufacturing data pipelines.",
   "I hold a B.S. in Computer Engineering from the University of Maine and an M.S. in Data Science from UC Berkeley.",
-  "I write about machine learning, AWS, computer architecture, and the occasional personal project — like 3D spinal-fracture segmentation or dyeing linen.",
+  "I write about the things I'm learning and my aspirations are to become a computational neuroscientist",
 ]
 image = "/images/cover.png"
 
