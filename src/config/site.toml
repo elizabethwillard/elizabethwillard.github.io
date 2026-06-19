@@ -1,8 +1,8 @@
 [config.site]
 title = "Elizabeth Willard"
-description = "Software Engineer — notes on ML, AWS, and systems."
+description = "Data Scientist"
 pageTitle = "Elizabeth Willard"
-pageDescription = "Software engineer writing about machine learning, AWS, computer architecture, and the occasional personal project."
+pageDescription = "Former Software engineer turned data scientist rambling."
 repository = "https://github.com/elizabethwillard/elizabethwillard.github.io"
 footerNote = "© Elizabeth Willard"
 
@@ -12,7 +12,7 @@ showTrail = true
 [config.theme]
 # Available palettes:
 # green-soft, green-vivid, rose-soft, pink-soft, purple-soft, blue-soft, orange-soft, brown-soft
-palette = "green-soft"
+palette = "pink-soft"
 
 [config.code]
 lightTheme = "catppuccin-latte"
@@ -73,7 +73,7 @@ location = ""
 email = "ewillard42@gmail.com"
 website = "https://elizabethwillard.github.io"
 github = "https://github.com/elizabethwillard"
-meta = "Software Engineer"
+meta = "Data Scientist"
 avatar = "/images/eliz.jpg"
 
 [[config.topNav.links]]
@@ -135,13 +135,13 @@ href = "/about"
 [[config.home.navigation]]
 icon = "pen"
 title = "Blog"
-subtitle = "Notes on ML, AWS, and systems"
+subtitle = "Notes on tech"
 href = "/blog"
 
 [[config.home.navigation]]
 icon = "briefcase"
 title = "Projects"
-subtitle = "Personal and open-source work"
+subtitle = "Personal work"
 href = "/projects"
 
 [[config.home.navigation]]
@@ -171,17 +171,11 @@ href = "/rss.xml"
 icon = "book"
 
 [[config.home.doing]]
-text = "Researching short-term load forecasting methods"
+text = "Researching electron microscopy segmentation methods in regards to spinal cord"
 mark = "01"
 
 [[config.home.doing]]
-text = "Building AWS-native data pipelines at ISO-New England"
+text = "Consulting on Mainecare Quality Assurance Billing AI Assistant"
 mark = "02"
 
-[[config.home.doing]]
-text = "Writing notes on ML, Python, and systems"
-mark = "03"
 
-[[config.home.doing]]
-text = "Teaching an intro Python workshop at Factory3"
-mark = "04"
