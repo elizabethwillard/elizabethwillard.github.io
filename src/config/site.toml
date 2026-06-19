@@ -23,9 +23,9 @@ preserveIndent = true
 collapseStyle = "collapsible-auto"
 
 [config.comments]
-enabled = true
+enabled = false
 provider = "giscus"
-show_on_posts = true
+show_on_posts = false
 
 [config.search]
 enabled = true
