@@ -139,6 +139,7 @@ href = "/blog"
 [[config.home.navigation]]
 icon = "briefcase"
 title = "Projects"
+subtitle = "Repositories and Project Links"
 href = "/projects"
 
 [[config.home.navigation]]
