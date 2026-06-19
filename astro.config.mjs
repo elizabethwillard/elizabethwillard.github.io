@@ -42,6 +42,17 @@ export default defineConfig({
     rehypePlugins: [rehypeMathjax],
   },
 
+  redirects: {
+    '/learningaboutdotnet/': '/blog/learningaboutdotnet/',
+    '/dyeing-linen/': '/blog/dyeing-linen/',
+    '/learningaboutrl/': '/blog/learningaboutrl/',
+    '/starting-ec2-with-jupyter-hub/': '/blog/starting-ec2-with-jupyter-hub/',
+    '/using_githubactions_with_ecr_and_ec2/': '/blog/using_githubactions_with_ecr_and_ec2/',
+    '/computer_organization_and_instruction_set_architecture/': '/blog/computer_organization_and_instruction_set_architecture/',
+    '/computer_instruction_set_architecture/': '/blog/computer_instruction_set_architecture/',
+    '/slicker_python/': '/blog/slicker_python/',
+  },
+
   vite: {
     plugins: [tailwindcss()],
   },
