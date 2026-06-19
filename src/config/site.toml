@@ -1,10 +1,10 @@
 [config.site]
-title = "navfolio"
-description = "A personal navigation portfolio starter built with Astro."
-pageTitle = "navfolio | Digital Publication Space"
-pageDescription = "A calm AI-native personal publication space for notes, links, and writing."
-repository = "https://github.com/dodolalorc/astro-navfolio"
-footerNote = "Released as an open-source starter."
+title = "Elizabeth Willard"
+description = "Software Engineer — notes on ML, AWS, and systems."
+pageTitle = "Elizabeth Willard"
+pageDescription = "Software engineer writing about machine learning, AWS, computer architecture, and the occasional personal project."
+repository = "https://github.com/elizabethwillard/elizabethwillard.github.io"
+footerNote = "© Elizabeth Willard"
 
 [config.vibe]
 showTrail = true
@@ -30,17 +30,17 @@ show_on_posts = true
 [config.search]
 enabled = true
 shortcut = "mod+k"
-placeholder = "Search notes..."
+placeholder = "Search posts..."
 maxResults = 6
 
 [config.blog]
 postsPerPage = 6
 
 [config.comments.giscus]
-repo = "dodolalorc/astro-navfolio"
-repo_id = "R_kgDOSaQejw"
-category = "Announcements"
-category_id = "DIC_kwDOSaQej84C9di9"
+repo = ""
+repo_id = ""
+category = ""
+category_id = ""
 mapping = "pathname"
 strict = "0"
 reactions_enabled = "1"
@@ -48,7 +48,7 @@ emit_metadata = "0"
 input_position = "top"
 light_theme = "light"
 dark_theme = "dark"
-lang = "zh-CN"
+lang = "en"
 loading = "lazy"
 
 [config.comments.utterances]
@@ -59,22 +59,22 @@ theme = "github-light"
 
 [config.comments.waline]
 server_url = ""
-lang = "zh-CN"
+lang = "en"
 dark = "html.dark"
 pageview = true
 comment = true
 
 [config.profile]
-name = "navfolio"
-handle = "@navfolio"
-role = "A Cat Developer"
-company = "Independent Studio"
-location = "Remote"
-email = "hello@navfolio.site"
-website = "https://astro.navfolio.site/"
-github = "https://github.com/dodolalorc/astro-navfolio"
-meta = "Open-source maintainer"
-avatar = "/images/logo.png"
+name = "Elizabeth Willard"
+handle = "@elizabethwillard"
+role = "Software Engineer"
+company = ""
+location = ""
+email = "ewillard42@gmail.com"
+website = "https://elizabethwillard.github.io"
+github = "https://github.com/elizabethwillard"
+meta = "Software Engineer"
+avatar = "/images/eliz.jpg"
 
 [[config.topNav.links]]
 label = "Home"
@@ -101,24 +101,22 @@ layout = "grid"
 
 [config.home.quote]
 text = [
-  "Navigate your world,",
-  "Showcase your story,",
-  "and keep everything in one place.",
+  "Machine learning, load forecasting,",
+  "data pipelines, and the occasional",
+  "craft project.",
 ]
-image = "/images/logo-with-name.png"
+image = "/images/eliz.jpg"
 
 [config.home.intro]
-title = "here is navfolio"
-name = "navfolio"
+title = "Hi, I'm Elizabeth"
+name = "Elizabeth Willard"
 body = [
-  "The name combines \"Navigation\" and \"Portfolio\".",
-  "Navfolio prioritizes lightweight organization, seamless reading, and developer-friendly aesthetics.",
-  "It’s less a resume than a personal OS for your ideas, projects, notes, and online presence.",
-  "这个名字融合了“导航”与“作品集”。",
-  "Navfolio 专注于轻量级组织、流畅的阅读体验，以及对开发者友好的美学设计。",
-  "它不像一份简历，更像是一个属于你自己的个人操作系统——承载想法、项目、笔记与网络足迹。",
+  "I'm a Load Forecast Data Scientist at ISO-New England, where I build reusable software packages and robust data pipelines for short-term load forecasting.",
+  "Previously I was an Embedded Software Engineer at IDEXX Laboratories, and before that an intern at Texas Instruments building manufacturing data pipelines.",
+  "I hold a B.S. in Computer Engineering from the University of Maine and an M.S. in Data Science from UC Berkeley.",
+  "I write about machine learning, AWS, computer architecture, and the occasional personal project — like 3D spinal-fracture segmentation or dyeing linen.",
 ]
-image = "/images/logo-cat.png"
+image = "/images/cover.png"
 
 [config.home.latest]
 count = 1
@@ -130,69 +128,60 @@ dateArchiveBaseHref = ""
 
 [[config.home.navigation]]
 icon = "compass"
-title = "Portfolio"
-subtitle = "Selected work and case studies"
-href = "https://astro.navfolio.site/"
+title = "About"
+subtitle = "Background, experience, and skills"
+href = "/about"
 
 [[config.home.navigation]]
 icon = "pen"
 title = "Blog"
-subtitle = "Essays, notes, and field reports"
+subtitle = "Notes on ML, AWS, and systems"
 href = "/blog"
 
 [[config.home.navigation]]
 icon = "briefcase"
-title = "Resume"
-subtitle = "Career profile and experience"
-href = "https://github.com/dodolalorc/navfolio"
+title = "Projects"
+subtitle = "Personal and open-source work"
+href = "/projects"
 
 [[config.home.navigation]]
 icon = "github"
-title = "Open Source"
+title = "GitHub"
 subtitle = "Code, experiments, and tools"
-href = "https://github.com/dodolalorc/astro-navfolio"
+href = "https://github.com/elizabethwillard"
 
 [[config.home.connect]]
 label = "GitHub"
-href = "https://github.com/dodolalorc/astro-navfolio"
+href = "https://github.com/elizabethwillard"
 icon = "github"
 
 [[config.home.connect]]
-label = "Website"
-href = "https://astro.navfolio.site/"
+label = "LinkedIn"
+href = "https://www.linkedin.com/in/elizabeth-willard"
 icon = "compass"
 
 [[config.home.connect]]
-label = "Blog"
-href = "/blog"
-icon = "book"
-
-[[config.home.connect]]
-label = "Projects"
-href = "/projects"
-icon = "repo"
-
-[[config.home.connect]]
 label = "Email"
-href = "mailto:hello@navfolio.site"
+href = "mailto:ewillard42@gmail.com"
 icon = "mail"
 
+[[config.home.connect]]
+label = "RSS"
+href = "/rss.xml"
+icon = "book"
+
 [[config.home.doing]]
-text = "Shipping a personal dashboard template"
+text = "Researching short-term load forecasting methods"
 mark = "01"
 
 [[config.home.doing]]
-text = "Writing reusable notes for future projects"
+text = "Building AWS-native data pipelines at ISO-New England"
 mark = "02"
 
 [[config.home.doing]]
-text = "Improving static-site publishing workflow"
+text = "Writing notes on ML, Python, and systems"
 mark = "03"
 
 [[config.home.doing]]
-text = "Collecting useful developer resources"
+text = "Teaching an intro Python workshop at Factory3"
 mark = "04"
-
-[[config.home.doing]]
-text = "Exploring small open-source ideas"
-mark = "05"
