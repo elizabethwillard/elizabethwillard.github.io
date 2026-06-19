@@ -8,12 +8,18 @@ hidden: False
 Setup:
 
 Machine: 2024 MacBook Air Apple M3 8-Core 16 GB 
+
 Visual Studio Code
+
     - [Marimo Extension](https://marketplace.visualstudio.com/items?itemName=marimo-team.vscode-marimo)
     - [Ruff Extension](https://docs.astral.sh/ruff/)
+    
 [UV](https://docs.astral.sh/uv/getting-started/installation/)
+
 [Polars](https://pola.rs/) - as a substitute for Pandas 
+
 Claude Code in Terminal (iTerm2)
+
     - I have a general, top-level Claude.md file that's a modification of the [Karpathy Guidelines](https://github.com/multica-ai/andrej-karpathy-skills/blob/main/skills/karpathy-guidelines/SKILL.md) 
     - Then repo-specific Claude.MD files as necessary to explain this workflow + other preferred stylistic/architectural preferences 
 
