@@ -3,7 +3,7 @@ title = "Elizabeth Willard"
 description = "Data Scientist"
 pageTitle = "Elizabeth Willard"
 pageDescription = "Former Software engineer turned data scientist rambling."
-repository = "https://github.com/elizabethwillard/elizabethwillard.github.io"
+repository = "https://github.com/elizabethwillard/"
 footerNote = "© Elizabeth Willard"
 
 [config.vibe]
@@ -118,8 +118,8 @@ body = [
 image = "/images/cover.png"
 
 [config.home.latest]
-count = 1
-heatmapWeeks = 12
+count = 2
+heatmapWeeks = 24
 showHeatmapLatest = true
 excludeDraft = true
 startDate = ""
