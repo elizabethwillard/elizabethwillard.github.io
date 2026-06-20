@@ -7,7 +7,7 @@ categories: [Technical]
 ---
 Setup:
 
-Machine: 2024 MacBook Air Apple M3 8-Core 16 GB 
+Machine: 2024 MacBook Air Apple M3 8-Core 16 GB
 
 Visual Studio Code
 
@@ -25,5 +25,8 @@ Claude Code in Terminal (iTerm2)
 
 Astral's UV and Ruff makes me want to learn Rust. But that would be on top of Go, in which I've already been plucking away at their tutorials and other docs because I'm interested in Go's scalability. But when it comes to Rust, memory management always made me nervous when writing code for undergraduate classes in C/C++, so it would be nice to work with something that abstractifies that away for me. 
 
-The less I have to juggle, the better, which is something I can really appreciate when it comes to working with Claude. I've even created a bookmarklet for Chromium browsers that allows me to send .epubs to my 2017 Kindle Paperwhite from annas-archive while I shop on Amazon. There's still some small kinks to work out, and the GIF below is deceptive because it's on 2x speed. <img src="https://github.com/elizabethwillard/elizabethwillard.github.io/blob/master/images/send2kindleexample.gif?raw=true" alt="demo" width="300"/>
+The less I have to juggle, the better, which is something I can really appreciate when it comes to working with Claude. I've even created a bookmarklet for Chromium browsers that allows me to send .epubs to my 2017 Kindle Paperwhite from annas-archive while I shop on Amazon. There's still some small kinks to work out, and the GIF below is deceptive because it's on 2x speed. 
+
+![demo_gif](https://github.com/elizabethwillard/elizabethwillard.github.io/blob/master/images/send2kindleexample.gif?raw=true)
+
 

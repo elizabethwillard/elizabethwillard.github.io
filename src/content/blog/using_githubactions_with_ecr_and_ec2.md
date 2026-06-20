@@ -10,7 +10,7 @@ categories: [technical]
 Recently, I used Github Actions to automate the deployment of a Streamlit application I was using for my capstone project, Charge Buddy. 
 As we draw closer to the finish line, the risk that manual deployment introduces becomes too much at a certain point. Today, I wanted to go over the steps I took to write a simple Github Actions workflow that automated the deployment of our Streamlit application, along with a NGINX container for a reverse proxy. Streamlit cannot use HTTPS on its own, but a NGINX reverse proxy can enable us to use HTTPS in our application. 
 
-![Blank diagram (2)](https://github.com/elizabethwillard/elizabethwillard.github.io/assets/57194659/41f7d78d-7b59-4444-883e-5717a6b6bf8c)
+![Architecture diagram: GitHub Actions deploying a Streamlit app with an NGINX reverse proxy to EC2 via ECR](../../assets/figure/githubactions-ecr-ec2-diagram.jpg)
 
 
 1. Create an Elastic Container Registry repository to store your Docker images
