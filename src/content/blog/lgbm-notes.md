@@ -1,4 +1,4 @@
-----
+---
 title: Introduction to the Light Gradient Boosted Model for Short Term Forecasting
 description: An introduction to LightGBM applied to short-term load forecasting in the US energy market.
 date: 2026-02-19
