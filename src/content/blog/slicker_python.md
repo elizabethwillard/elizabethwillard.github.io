@@ -27,4 +27,3 @@ Astral's UV and Ruff makes me want to learn Rust. But that would be on top of Go
 
 The less I have to juggle, the better, which is something I can really appreciate when it comes to working with Claude. I've even created a bookmarklet for Chromium browsers that allows me to send .epubs to my 2017 Kindle Paperwhite from annas-archive while I shop on Amazon. There's still some small kinks to work out, and the GIF below is deceptive because it's on 2x speed. <img src="https://github.com/elizabethwillard/elizabethwillard.github.io/blob/master/images/send2kindleexample.gif?raw=true" alt="demo" width="300"/>
 
-I would like to 3D print some sort of easily-cleanable, upside-down suet feeder that has a solar panel + a camera that automatically logs birds in my area through the eBird API, so maybe there's an opportunity in there for me to use Go and create a little web-server dashboard so I can view recent photos captured of any visitors.
