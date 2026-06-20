@@ -67,7 +67,7 @@ comment = true
 [config.profile]
 name = "Elizabeth Willard"
 handle = "@elizabethwillard"
-role = "Software Engineer"
+role = "Scientist & Engineer"
 company = ""
 location = ""
 email = "ewillard42@gmail.com"
@@ -118,7 +118,7 @@ body = [
 image = "/images/cover.png"
 
 [config.home.latest]
-count = 2
+count = 1
 heatmapWeeks = 24
 showHeatmapLatest = true
 excludeDraft = true
