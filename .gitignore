@@ -25,6 +25,8 @@ pnpm-debug.log*
 
 .agents/
 AGENTS.md
+CLAUDE.md
+docs/
 
 # generated font files
 scripts/fonts/ui-chars.txt
