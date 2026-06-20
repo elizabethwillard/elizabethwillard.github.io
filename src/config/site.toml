@@ -84,9 +84,10 @@ href = "/"
 label = "Blog"
 href = "/blog"
 
-[[config.topNav.links]]
-label = "Projects"
-href = "/projects"
+# Hidden for now — restore by uncommenting
+# [[config.topNav.links]]
+# label = "Projects"
+# href = "/projects"
 
 [[config.topNav.links]]
 label = "Vibe"
