@@ -1,0 +1,7 @@
+{
+  "pasteImage.path": "${projectRoot}/public/images/figure",
+  "pasteImage.basePath": "${projectRoot}",
+  "pasteImage.forceUnixStyleSeparator": true,
+  "pasteImage.prefix": "/",
+  "pasteImage.defaultName": "screenshot-${date:YYYY-MM-DD-HHmmss}"
+}
