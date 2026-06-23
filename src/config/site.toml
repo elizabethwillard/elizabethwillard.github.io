@@ -114,10 +114,11 @@ image = "/images/eliz.jpg"
 title = "I'm Elizabeth"
 name = ""
 body = [
-  "I'm a Load Forecast Data Scientist at ISO-New England, specifically focused on very-short-term day-ahead forecasts used by operations who manage the NE grid",
-  "Previously, I was an Embedded Software Engineer at IDEXX Laboratories working on the Catalyst1 and CatalystDx.",
-  "I hold a B.S. in Computer Engineering from the University of Maine and an M.S. in Data Science from UC Berkeley.",
-  "I write about whatever I'm learning or interested in. My aspirations are to become a computational neuroscientist",
+  "Currently working as a data scientist.",
+  "Born and raised in New England.",
+  "I love fiber arts and travel. Avid birder and reader.",
+  "I want to pursue a PhD in Computational Neuroscience."
+
 ]
 image = "/images/cover.png"
 
