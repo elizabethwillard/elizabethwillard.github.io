@@ -2,7 +2,7 @@
 title: "Chapter 2: Matrix Operations and Determinants"
 textbook: "Linear Algebra"
 date: 2026-06-22
-draft: true
+draft: false
 tags: ["matrices", "determinants"]
 ---
 

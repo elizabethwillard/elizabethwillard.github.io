@@ -2,7 +2,7 @@
 title: "Chapter 1 Introduction to Essential Cell Biology"
 textbook: "Essential Cell Biology"
 date: 2026-06-18
-draft: true
+draft: false
 tags: ["basics", "biology"]
 ---
 
