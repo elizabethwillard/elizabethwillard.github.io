@@ -1,0 +1,281 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import BlogTopNav from '../components/blog/BlogTopNav.astro';
+import { getSiteConfig } from '../data/site';
+import { sortByDateDesc } from '../utils/content-dates';
+
+const { site, theme } = await getSiteConfig();
+const palette = theme.palette;
+
+// Fetch and filter notes
+const allNotes = await getCollection('notes');
+const publicNotes = allNotes.filter((note) => !note.data.draft);
+const sortedNotes = sortByDateDesc(publicNotes);
+
+// Extract unique textbooks
+const textbooks = [...new Set(sortedNotes.map((note) => note.data.textbook))].sort();
+
+// Get selected textbook from URL query parameter
+const selectedTextbook = Astro.url.searchParams.get('textbook');
+
+// Filter notes by selected textbook
+const filteredNotes = selectedTextbook
+  ? sortedNotes.filter((note) => note.data.textbook === selectedTextbook)
+  : sortedNotes;
+
+// Render all filtered notes
+const notesWithContent = await Promise.all(
+  filteredNotes.map(async (entry) => {
+    const { Content } = await render(entry);
+    return { entry, Content };
+  }),
+);
+---
+
+<!doctype html>
+<html lang="en" data-palette={palette}>
+  <head>
+    <BaseHead title={`Notes | ${site.title}`} description="Study notes on textbooks and courses." />
+    <style>
+      main {
+        width: min(100%, var(--layout-shell-width));
+        max-width: none;
+        padding: 118px var(--layout-page-gutter) var(--layout-page-bottom);
+      }
+
+      @media (max-width: 720px) {
+        main {
+          padding-top: 88px;
+        }
+      }
+
+      .notes-header {
+        margin-bottom: 40px;
+      }
+
+      .notes-title {
+        margin: 0 0 12px;
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+        font-weight: 400;
+        line-height: 1.2;
+      }
+
+      .notes-description {
+        max-width: 60ch;
+        margin: 0;
+        color: var(--paper-ink-soft);
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      .textbook-filter {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 40px;
+        padding-bottom: 28px;
+        border-bottom: 1px solid var(--paper-line);
+      }
+
+      .filter-button {
+        padding: 8px 16px;
+        border: 1px solid var(--paper-line);
+        border-radius: 6px;
+        background: var(--paper-control);
+        color: var(--paper-ink);
+        font-size: 0.9rem;
+        cursor: pointer;
+        text-decoration: none;
+        transition:
+          background 180ms ease,
+          border-color 180ms ease,
+          transform 180ms ease;
+      }
+
+      .filter-button:hover {
+        border-color: var(--paper-line-strong);
+        background: var(--paper-control-hover);
+        transform: translateY(-1px);
+      }
+
+      .filter-button.active {
+        background: var(--paper-accent);
+        border-color: var(--paper-accent);
+        color: var(--paper-bg);
+      }
+
+      .notes-list {
+        display: grid;
+        gap: 36px;
+      }
+
+      .note-entry {
+        padding-bottom: 32px;
+        border-bottom: 1px solid var(--paper-line);
+      }
+
+      .note-entry:last-child {
+        border-bottom: none;
+      }
+
+      .note-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 12px;
+        font-size: 0.85rem;
+      }
+
+      .note-textbook {
+        color: var(--paper-ink-muted);
+        font-family: var(--font-meta);
+        font-weight: 600;
+      }
+
+      .note-date {
+        color: var(--paper-ink-faint);
+        font-family: var(--font-meta);
+      }
+
+      .note-title {
+        margin: 0 0 12px;
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.4;
+      }
+
+      .note-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+
+      .note-tag {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 12px;
+        background: var(--paper-control);
+        color: var(--paper-ink-soft);
+        font-size: 0.75rem;
+        font-weight: 500;
+      }
+
+      .note-content {
+        margin-top: 16px;
+        font-size: 0.95rem;
+        line-height: 1.7;
+      }
+
+      .note-content :global(h2) {
+        margin-top: 24px;
+        margin-bottom: 12px;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+
+      .note-content :global(h3) {
+        margin-top: 16px;
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+        font-weight: 600;
+      }
+
+      .note-content :global(ul),
+      .note-content :global(ol) {
+        margin: 12px 0;
+        padding-left: 24px;
+      }
+
+      .note-content :global(li) {
+        margin: 4px 0;
+      }
+
+      .note-content :global(p) {
+        margin: 12px 0;
+      }
+
+      .note-content :global(code) {
+        padding: 2px 6px;
+        background: var(--paper-control);
+        border-radius: 3px;
+        font-family: var(--font-mono);
+        font-size: 0.85em;
+      }
+
+      .no-notes {
+        padding: 60px 24px;
+        text-align: center;
+        color: var(--paper-ink-faint);
+      }
+
+      .no-notes p {
+        margin: 0;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <BlogTopNav />
+    <main>
+      <section class="notes-header">
+        <h1 class="notes-title">Study Notes</h1>
+        <p class="notes-description">Mixed notes on textbooks I'm reading: chapter summaries, key concepts, and reflections.</p>
+      </section>
+
+      {textbooks.length > 0 && (
+        <nav class="textbook-filter">
+          <a
+            href="/notes/"
+            class={`filter-button ${!selectedTextbook ? 'active' : ''}`}
+          >
+            All Textbooks
+          </a>
+          {textbooks.map((textbook) => (
+            <a
+              href={`/notes/?textbook=${encodeURIComponent(textbook)}`}
+              class={`filter-button ${selectedTextbook === textbook ? 'active' : ''}`}
+            >
+              {textbook}
+            </a>
+          ))}
+        </nav>
+      )}
+
+      {notesWithContent.length > 0 ? (
+        <section class="notes-list">
+          {notesWithContent.map(({ entry, Content }) => (
+            <article class="note-entry">
+              <div class="note-meta">
+                <span class="note-textbook">{entry.data.textbook}</span>
+                <span class="note-date">
+                  <FormattedDate date={entry.data.date} />
+                </span>
+              </div>
+              {entry.data.title && <h2 class="note-title">{entry.data.title}</h2>}
+              <div class="note-content">
+                <Content />
+              </div>
+              {entry.data.tags && entry.data.tags.length > 0 && (
+                <div class="note-tags">
+                  {entry.data.tags.map((tag) => (
+                    <span class="note-tag">{tag}</span>
+                  ))}
+                </div>
+              )}
+            </article>
+          ))}
+        </section>
+      ) : (
+        <div class="no-notes">
+          <p>No notes found{selectedTextbook ? ` for "${selectedTextbook}"` : ''}.</p>
+        </div>
+      )}
+    </main>
+    <Footer />
+  </body>
+</html>

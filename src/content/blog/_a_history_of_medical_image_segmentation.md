@@ -8,5 +8,3 @@ draft: true
 series: [Medical Imaging Segmentation]
 ---
 
-
-

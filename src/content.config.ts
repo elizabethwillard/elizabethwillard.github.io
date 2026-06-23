@@ -322,4 +322,16 @@ const vibe = defineCollection({
     }),
 });
 
-export const collections = { about, blog, projects, vibe, siteConfig };
+const notes = defineCollection({
+  loader: glob({ base: './src/content/notes', pattern: '**/*.{md,mdx}' }),
+  schema: ({ image }: Parameters<CollectionSchemaFactory>[0]) =>
+    z.object({
+      title: z.string().optional(),
+      textbook: z.string(),
+      date: z.coerce.date(),
+      draft: z.boolean().optional().default(false),
+      tags: z.array(z.string()).optional().default([]),
+    }),
+});
+
+export const collections = { about, blog, projects, vibe, notes, siteConfig };
