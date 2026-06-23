@@ -1,9 +1,9 @@
 ---
-title: "Introduction to Data Structures"
-textbook: "Data Structures"
+title: "Chapter 1 Introduction to Essential Cell Biology"
+textbook: "Essential Cell Biology"
 date: 2026-06-18
-draft: false
-tags: ["basics", "time-complexity"]
+draft: true
+tags: ["basics", "biology"]
 ---
 
 ## What is a Data Structure?

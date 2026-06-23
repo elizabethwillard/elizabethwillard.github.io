@@ -1,9 +1,9 @@
 ---
-title: "Chapter 1: Vectors and Linear Transformations"
-textbook: "Linear Algebra"
+title: "Chapter 1 & Chapter 2: Computer Vision 2nd Editiion Richard Szeliski"
+textbook: "Computer Vision"
 date: 2026-06-15
 draft: false
-tags: ["vectors", "linear-transformations"]
+tags: ["", "linear-transformations"]
 ---
 
 ## Key Concepts
