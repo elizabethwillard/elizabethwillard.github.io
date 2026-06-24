@@ -1,0 +1,40 @@
+name: Auto Push Nightly
+
+on:
+  schedule:
+    # Run at 10pm UTC every night (adjust timezone if needed)
+    # 10pm UTC = 5pm EDT / 4pm PDT
+    - cron: '0 22 * * *'
+
+  # Allow manual trigger from Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history to check for unpushed commits
+
+      - name: Configure git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "noreply@github.com"
+
+      - name: Check for unpushed commits and push
+        run: |
+          # Get the number of commits ahead of origin
+          UNPUSHED=$(git rev-list --count @{u}..HEAD 2>/dev/null || echo "0")
+
+          if [ "$UNPUSHED" -gt 0 ]; then
+            echo "Found $UNPUSHED unpushed commit(s). Pushing to origin..."
+            git push origin master
+            echo "✓ Successfully pushed $UNPUSHED commit(s)"
+          else
+            echo "No unpushed commits found. Skipping push."
+          fi

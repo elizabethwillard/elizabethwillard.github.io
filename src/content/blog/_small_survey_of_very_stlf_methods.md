@@ -56,7 +56,9 @@ Three Layers:
     - Fully connected linear layer     
 Between 2 and 3, a Bahdanau attention layer is inserted in between these.
 - Calculates attention between using linear transformations and nonlinear operations 
-- Used to weigh the sum of hidden state values, so the model can better understand the correlation between different parts of the input sequence and adjust the model's predictive output accordingly 
+- Used to weigh the sum of hidden state values, generating the final context vector which is fed into the next time step to generate the output 
+- allows for better understanding ocorrelation between different parts of the input sequence and adjusts the model's predictive output accordingly 
+- 
 
 ```
 Initialize in_channels, out_channels, hid-den_si-ze, num_layers,  output_size, batch_size, seq_length, all weight matrices and biases
